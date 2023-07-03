@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Capital shop</title>
+    <link rel="stylesheet" href="css/fonts.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <script src="js/cdn.tailwindcss.com_3.3.2"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              red: "#FF2020",
+            },
+            fontSize: {
+              small: "10px",
+            },
+            fontFamily: {
+              sans: ['Jost'],
+              cursive: ['Clicker Script'],
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <!-- header  -->
+    <header>
+      <div class="topbar border-b py-3 hidden sm:block">
+        <div class="container mx-auto">
+          <div class="flex justify-center sm:justify-between">
+            <ul class="left-list hidden sm:flex space-x-4">
+              <li><a href="#" class="text-sm">About Us</a></li>
+              <li><a href="#" class="text-sm">Privacy</a></li>
+              <li><a href="#" class="text-sm">FAQ</a></li>
+              <li><a href="#" class="text-sm">Careers</a></li>
+            </ul>
+            <ul class="right-list flex space-x-2.5 divide-x">
+              <li><a href="#" class="text-sm">My Wishlist</a></li>
+              <li class="pl-2.5">
+                <a href="#" class="text-sm"> Track Your Order</a>
+              </li>
+              <li class="space-x-2.5 pl-2.5">
+                <i
+                  class="fa-brands text-zinc-500 hover:text-red cursor-pointer hover:rotate-[360deg] transition-all duration-200 fa-facebook"
+                ></i>
+                <i
+                  class="fa-brands text-zinc-500 hover:text-red cursor-pointer hover:rotate-[360deg] transition-all duration-200 fa-instagram"
+                ></i>
+                <i
+                  class="fa-brands text-zinc-500 hover:text-red cursor-pointer hover:rotate-[360deg] transition-all duration-200 fa-twitter"
+                ></i>
+                <i
+                  class="fa-brands text-zinc-500 hover:text-red cursor-pointer hover:rotate-[360deg] transition-all duration-200 fa-linkedin-in"
+                ></i>
+                <i
+                  class="fa-brands text-zinc-500 hover:text-red cursor-pointer hover:rotate-[360deg] transition-all duration-200 fa-youtube"
+                ></i>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <nav class="border-b">
+        <div class="container mx-auto py-3 px-3 sm:px-0">
+          <div class="flex justify-between items-center">
+            <div class="logo">
+              <a href="#">
+                <img src="img/logo.png" alt="" />
+              </a>
+            </div>
+
+            <div class="navigation">
+              <ul
+                class="xl:flex xl:space-x-8 absolute xl:static bg-white divide-y xl:divide-y-0 scale-y-0 xl:scale-y-100 transition-all duration-200 origin-top w-full start-0 top-[120px]">
+                <li>
+                  <a
+                    href="index.html"
+                    class="font-semibold text-base capitalize py-2 inline-block px-3 hover:text-red"
+                    >home</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="font-semibold text-base capitalize py-2 inline-block px-3 hover:text-red"
+                    >Men</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="women.html"
+                    class="font-semibold text-base capitalize py-2 inline-block px-3 hover:text-red"
+                    >Women</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="font-semibold text-base capitalize py-2 inline-block px-3 hover:text-red relative"
+                    >Baby Collection
+                    <span
+                      class="bg-red text-white px-1 rounded-md absolute leading-snug -top-[10%] right-0 text-small"
+                      >New</span
+                    >
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="font-semibold text-base capitalize py-2 inline-block px-3 hover:text-red"
+                    >pages <i class="fa-solid fa-angle-down text-sm"></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="font-semibold text-base capitalize py-2 inline-block px-3 hover:text-red"
+                    >blog</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="font-semibold text-base capitalize py-2 inline-block px-3 hover:text-red"
+                    >contact</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="icon hidden sm:flex space-x-4 text-zinc-800">
+              <i class="text-2xl fa-solid fa-magnifying-glass"></i>
+              <i class="text-2xl fa-regular fa-user"></i>
+              <i class="text-2xl fa-solid fa-cart-shopping relative"
+                ><span
+                  class="bg-red text-white px-1 rounded-md absolute leading-snug -top-0 right-0 text-small">1</span></i>
+            </div>
+            <div class="toggle xl:hidden">
+              <i class="fa-solid fa-bars text-xl"></i>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div
+        class="bottom-bar bg-black text-white text-center pt-2 pb-3 hidden sm:block"
+      >
+        <p class="font-medium">
+          Sale Up To 50% Biggest Discounts. Hurry! Limited Perriod Offer
+          <a href="#" class="text-orange-200 hover:tracking-wider transition-all underline decoration-2 underline-offset-8">Shop Now</a>
+        </p>
+      </div>
+    </header>
+    <!-- banner section  -->
+    <section>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper h-auto">
+          <div
+            class="swiper-slide h-auto bg-[url(img/h1_hero1.jpg.webp)] py-44"
+          >
+            <div class="container mx-auto">
+              <div class="w-5/12">
+                <div class="text-center">
+                  <h2 class="font-cursive text-red text-5xl">Fashion Sale</h2>
+                  <h1 class="text-6xl font-medium text-zinc-800 py-5">Minimal Menz Style</h1>
+                  <p class="px-24 text-lg text-zinc-500">
+                    Consectetur adipisicing elit. Laborum fuga incidunt
+                    laboriosam voluptas iure, delectus dignissimos facilis neque
+                    nulla earum.
+                  </p>
+                  <a href="#" class="text-white bg-zinc-700 py-2 px-7 text-sm mt-4 inline-block">SHOP NOW </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide bg-[url(img/h1_hero2.jpg.webp)] py-44">
+            <div class="container mx-auto">
+              <div class="w-5/12 ml-auto">
+                <div class="text-center">
+                  <h2 class="font-cursive text-red text-5xl">Fashion Sale</h2>
+                  <h1 class="text-6xl font-medium text-zinc-800 py-5">Minimal Menz Style</h1>
+                  <p class="px-24 text-lg text-zinc-500">
+                    Consectetur adipisicing elit. Laborum fuga incidunt
+                    laboriosam voluptas iure, delectus dignissimos facilis neque
+                    nulla earum.
+                  </p>
+                  <a href="#" class="text-white bg-zinc-700 py-2 px-7 text-sm mt-4 inline-block">SHOP NOW </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- service section  -->
+    <section class="pt-5 pb-32">
+      <div class="container mx-auto">
+        <div class="columns-3">
+          <div class="relative overflow-hidden group">
+            <img src="img/items1.jpg.webp" class="w-full group-hover:scale-105 transition-all duration-500" alt="">
+            <div class="bg-gradient-to-r from-black -rotate-90 from-2% via-transparent via-40% absolute w-full h-[150%] left-0 -top-32 "></div>
+            <div class="absolute w-full h-full group-hover:bottom-0 transition-all  duration-500 -bottom-14 start-0 text-center flex justify-center items-end pb-8 ">
+              <div>
+                <h3 class="text-white text-2xl font-semibold mb-3">Men's Fashion</h3>
+                <a href="#" class="text-orange-200 group-hover:opacity-100 transition-all duration-500 hover:tracking-wider opacity-0 transition-all underline decoration-2 underline-offset-8">Shop Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="relative overflow-hidden group">
+            <img src="img/items2.jpg.webp" class="w-full group-hover:scale-105 transition-all duration-500" alt="">
+            <div class="bg-gradient-to-r from-black -rotate-90 from-2% via-transparent via-40% absolute w-full h-[150%] left-0 -top-32 "></div>
+            <div class="absolute w-full h-full group-hover:bottom-0 transition-all  duration-500 -bottom-14 start-0 text-center flex justify-center items-end pb-8 ">
+              <div>
+                <h3 class="text-white text-2xl font-semibold mb-3">Women's Fashion</h3>
+                <a href="#" class="text-orange-200 group-hover:opacity-100 transition-all duration-500 hover:tracking-wider opacity-0 transition-all underline decoration-2 underline-offset-8">Shop Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="relative overflow-hidden group">
+            <img src="img/items3.jpg.webp" class="w-full group-hover:scale-105 transition-all duration-500" alt="">
+            <div class="bg-gradient-to-r from-black -rotate-90 from-2% via-transparent via-40% absolute w-full h-[150%] left-0 -top-32 "></div>
+            <div class="absolute w-full h-full group-hover:bottom-0 transition-all  duration-500 -bottom-14 start-0 text-center flex justify-center items-end pb-8 ">
+              <div>
+                <h3 class="text-white text-2xl font-semibold mb-3">Baby's Fashion</h3>
+                <a href="#" class="text-orange-200 group-hover:opacity-100 transition-all duration-500 hover:tracking-wider opacity-0 transition-all underline decoration-2 underline-offset-8">Shop Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- trending section  -->
+    <section class="pb-32">
+      <div class="container mx-auto">
+        <div class="flex items-center justify-between border-b mb-4 pb-3">
+          <h5 class="text-4xl font-medium">Trending This Week</h5>
+          <ul class="flex space-x-8 text-base font-medium">
+            <li class="text-red underline decoration-4 underline-offset-[22px] ">Men</li>
+            <li class="underline decoration-4 underline-offset-[22px] decoration-transparent hover:decoration-red transition-all duration-500 cursor-pointer">Women</li>
+            <li class="underline decoration-4 underline-offset-[22px] decoration-transparent hover:decoration-red transition-all duration-500 cursor-pointer">Baby</li>
+            <li class="underline decoration-4 underline-offset-[22px] decoration-transparent hover:decoration-red transition-all duration-500 cursor-pointer">Fashion</li>
+          </ul>
+        </div>
+        <div class="swiper trending">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class=" group">
+                <div class="overflow-hidden relative">
+                  <img src="img/latest1.jpg.webp"  class="w-full transition-all duration-500 group-hover:scale-105" alt="">
+                  <ul class="icon-box flex opacity-0 group-hover:opacity-100 transition-all duration-500 absolute justify-center inset-x-0 text-center bottom-7">
+                    <li><i class="w-[50px] h-[50px] bg-white leading-[50px] hover:bg-red transition-all duration-500 hover:text-white fa-solid fa-cart-shopping"></i></li>
+                    <li><i class="w-[50px] h-[50px] bg-white leading-[50px] hover:bg-red transition-all duration-500 hover:text-white fa-regular fa-heart"></i></li>
+                    <li><i class="w-[50px] h-[50px] bg-white leading-[50px] hover:bg-red transition-all duration-500 hover:text-white fa-solid fa-magnifying-glass-plus"></i></li>
+                  </ul>
+                </div>
+                <h3 class="text-center py-3 group-hover:text-red">Cashmere Tank + Bag</h3>
+                <h4 class="text-center text-zinc-600 group-hover:text-zinc-700 font-medium">$98.00 <span class="line-through text-orange-200">$120.00</span> </h4>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class=" group">
+                <div class="overflow-hidden relative">
+                  <img src="img/latest2.jpg.webp"  class="w-full transition-all duration-500 group-hover:scale-105" alt="">
+                  <ul class="icon-box flex opacity-0 group-hover:opacity-100 transition-all duration-500 absolute justify-center inset-x-0 text-center bottom-7">
+                    <li><i class="w-[50px] h-[50px] bg-white leading-[50px] hover:bg-red transition-all duration-500 hover:text-white fa-solid fa-cart-shopping"></i></li>
+                    <li><i class="w-[50px] h-[50px] bg-white leading-[50px] hover:bg-red transition-all duration-500 hover:text-white fa-regular fa-heart"></i></li>
+                    <li><i class="w-[50px] h-[50px] bg-white leading-[50px] hover:bg-red transition-all duration-500 hover:text-white fa-solid fa-magnifying-glass-plus"></i></li>
+                  </ul>
+                </div>
+                <h3 class="text-center py-3 group-hover:text-red">Cashmere Tank + Bag</h3>
+                <h4 class="text-center text-zinc-600 group-hover:text-zinc-700 font-medium">$98.00 <span class="line-through text-orange-200">$120.00</span> </h4>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class=" group">
+                <div class="overflow-hidden relative">
+                  <img src="img/latest3.jpg.webp"  class="w-full transition-all duration-500 group-hover:scale-105" alt="">
+                  <ul class="icon-box flex opacity-0 group-hover:opacity-100 transition-all duration-500 absolute justify-center inset-x-0 text-center bottom-7">
+                    <li><i class="w-[50px] h-[50px] bg-white leading-[50px] hover:bg-red transition-all duration-500 hover:text-white fa-solid fa-cart-shopping"></i></li>
+                    <li><i class="w-[50px] h-[50px] bg-white leading-[50px] hover:bg-red transition-all duration-500 hover:text-white fa-regular fa-heart"></i></li>
+                    <li><i class="w-[50px] h-[50px] bg-white leading-[50px] hover:bg-red transition-all duration-500 hover:text-white fa-solid fa-magnifying-glass-plus"></i></li>
+                  </ul>
+                </div>
+                <h3 class="text-center py-3 group-hover:text-red">Cashmere Tank + Bag</h3>
+                <h4 class="text-center text-zinc-600 group-hover:text-zinc-700 font-medium">$98.00 <span class="line-through text-orange-200">$120.00</span> </h4>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class=" group">
+                <div class="overflow-hidden relative">
+                  <img src="img/latest4.jpg.webp"  class="w-full transition-all duration-500 group-hover:scale-105" alt="">
+                  <ul class="icon-box flex opacity-0 group-hover:opacity-100 transition-all duration-500 absolute justify-center inset-x-0 text-center bottom-7">
+                    <li><i class="w-[50px] h-[50px] bg-white leading-[50px] hover:bg-red transition-all duration-500 hover:text-white fa-solid fa-cart-shopping"></i></li>
+                    <li><i class="w-[50px] h-[50px] bg-white leading-[50px] hover:bg-red transition-all duration-500 hover:text-white fa-regular fa-heart"></i></li>
+                    <li><i class="w-[50px] h-[50px] bg-white leading-[50px] hover:bg-red transition-all duration-500 hover:text-white fa-solid fa-magnifying-glass-plus"></i></li>
+                  </ul>
+                </div>
+                <h3 class="text-center py-3 group-hover:text-red">Cashmere Tank + Bag</h3>
+                <h4 class="text-center text-zinc-600 group-hover:text-zinc-700 font-medium">$98.00 <span class="line-through text-orange-200">$120.00</span> </h4>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class=" group">
+                <div class="overflow-hidden relative">
+                  <img src="img/latest2.jpg.webp"  class="w-full transition-all duration-500 group-hover:scale-105" alt="">
+                  <ul class="icon-box flex opacity-0 group-hover:opacity-100 transition-all duration-500 absolute justify-center inset-x-0 text-center bottom-7">
+                    <li><i class="w-[50px] h-[50px] bg-white leading-[50px] hover:bg-red transition-all duration-500 hover:text-white fa-solid fa-cart-shopping"></i></li>
+                    <li><i class="w-[50px] h-[50px] bg-white leading-[50px] hover:bg-red transition-all duration-500 hover:text-white fa-regular fa-heart"></i></li>
+                    <li><i class="w-[50px] h-[50px] bg-white leading-[50px] hover:bg-red transition-all duration-500 hover:text-white fa-solid fa-magnifying-glass-plus"></i></li>
+                  </ul>
+                </div>
+                <h3 class="text-center py-3 group-hover:text-red">Cashmere Tank + Bag</h3>
+                <h4 class="text-center text-zinc-600 group-hover:text-zinc-700 font-medium">$98.00 <span class="line-through text-orange-200">$120.00</span> </h4>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class=" group">
+                <div class="overflow-hidden relative">
+                  <img src="img/latest3.jpg.webp"  class="w-full transition-all duration-500 group-hover:scale-105" alt="">
+                  <ul class="icon-box flex opacity-0 group-hover:opacity-100 transition-all duration-500 absolute justify-center inset-x-0 text-center bottom-7">
+                    <li><i class="w-[50px] h-[50px] bg-white leading-[50px] hover:bg-red transition-all duration-500 hover:text-white fa-solid fa-cart-shopping"></i></li>
+                    <li><i class="w-[50px] h-[50px] bg-white leading-[50px] hover:bg-red transition-all duration-500 hover:text-white fa-regular fa-heart"></i></li>
+                    <li><i class="w-[50px] h-[50px] bg-white leading-[50px] hover:bg-red transition-all duration-500 hover:text-white fa-solid fa-magnifying-glass-plus"></i></li>
+                  </ul>
+                </div>
+                <h3 class="text-center py-3 group-hover:text-red">Cashmere Tank + Bag</h3>
+                <h4 class="text-center text-zinc-600 group-hover:text-zinc-700 font-medium">$98.00 <span class="line-through text-orange-200">$120.00</span> </h4>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+     
+    <section class="bg-orange-100/70 p-32">
+      <div class="container mx-auto">
+        <div>
+          <h1 class="text-center text-5xl font-semibold">Customer Testimonial</h1>
+          <p class="w-1/2 text-center mx-auto pt-8 text-2xl">Everybody is different, which is why we offer styles for every body. Laborum fuga incidunt laboriosam voluptas iure, delectus dignissimos facilis neque nulla earum.</p>
+          <div class="">
+            <img src="img/founder-img.png.webp" alt="">
+            <div class="text-center">
+              <p>Petey Cruiser</p>
+              <p>Designer at Colorlib</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.7.0.js "></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 30,
+        
+        effect: "fade",
+        loop: true,
+        autoplay:true,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+
+      var swiper = new Swiper(".trending", {
+      slidesPerView: 1,
+      spaceBetween: 10,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      breakpoints: {
+        640: {
+          slidesPerView:1,
+          spaceBetween: 20,
+        },
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 40,
+        },
+        1024: {
+          slidesPerView:4,
+          spaceBetween: 50,
+        },
+      },
+    });
+    </script>
+    <script>
+      $(document).ready(function () {
+        $(".toggle").click(function () {
+          $(".navigation ul").toggleClass("scale-y-100");
+        });
+      });
+    </script>
+  </body>
+</html>
